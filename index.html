@@ -54,6 +54,23 @@
       font-size: 0.9em;
       color: #aaa;
     }
+    .question-btn {
+  display: block;
+  margin: 40px auto 20px auto;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  background-color: #00adb5;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.question-btn:hover {
+  background-color: #00d4d5;
+  transform: scale(1.05);
+}
+    
   </style>
   <title>Chitransh Ganesh Yadav Vlogs – Explore Coding, Tech & Creative Projects</title>
 <meta name="description" content="Welcome to Chitransh Vlogs – a world of coding, educational tools, tech experiments, and creative digital content. Explore free projects, smart interfaces, and fun web creations!">
@@ -110,6 +127,19 @@
   <footer>
     &copy; 2025 Chitransh Vlogs | All rights reserved.
   </footer>
+  <!-- 🔐 Question Button -->
+<button class="question-btn" onclick="askPassword()">❔</button>
+  <script>
+  function askPassword() {
+    const password = prompt("Enter the password to access:");
+    if (password === "c2h5i2t0") {
+      window.location.href = "https://chitransh-maths.github.io/You-tube2520";
+    } else if (password !== null) {
+      alert("Incorrect password. Access denied.");
+    }
+  }
+  </script>
+  
 
 </body>
 </html>
