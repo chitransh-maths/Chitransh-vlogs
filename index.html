@@ -70,6 +70,31 @@
   background-color: #00d4d5;
   transform: scale(1.05);
 }
+    .project-dropdown {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M0 0l5 7 5-7z" fill="%23fff"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 10px 7px;
+    }
+    .project-dropdown {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  background-color: #393e46;
+  color: #fff;
+  margin-top: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  appearance: none;
+}
+
+.project-dropdown:hover {
+  background-color: #00adb5;
+  cursor: pointer;
+}
+    
     
   </style>
   <title>Chitransh Ganesh Yadav Vlogs – Explore Coding, Tech & Creative Projects</title>
@@ -123,10 +148,16 @@
     <div class="link-item"><a href="https://c1h2i3t4.netlify.app" target="_blank">C1H2I3T4 Project</a></div>
     <div class="link-item"><a href="https://c4h3i2t1.netlify.app" target="_blank">C4H3I2T1 Project</a></div>
   </div>
-<h2>Mini-web</h2>
-  <div class="link-list">
-    <div class="link-item"><a href="https://chitransh-maths.github.io/1blog2" target="_blank">1Blog2</a></div>
+<h2></h2>Select a Project</h2>
+<div class="link-list">
+  <select class="project-dropdown" onchange="location = this.value;">
+    <option selected disabled>Choose a project...</option>
     
+    <option value="https://chitransh-maths.github.io/1blog2/">1Blog2</option>
+    
+  </select>
+</div>
+  
   <footer>
     &copy; 2025 Chitransh Vlogs | All rights reserved.
   </footer>
