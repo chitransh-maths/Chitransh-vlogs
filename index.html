@@ -363,8 +363,8 @@
 
   <footer>
     <div class="wrap footer-inner">
-      <span>Â© <span id="year"></span> Chitransh Ganesh Yadav. Built with curiosity and code.</span>
-      <a class="back-top" href="#home">Back to top â†‘</a>
+      <span>© <span id="year"></span> Chitransh Ganesh Yadav. Built with curiosity and code.</span>
+      <a class="back-top" href="#home">Back to top At→‘</a>
     </div>
   </footer>
 
@@ -377,7 +377,7 @@
       const isOpen = navLinks.classList.toggle('open');
       menuToggle.setAttribute('aria-expanded', String(isOpen));
       menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
-      menuToggle.textContent = isOpen ? 'âœ• Close' : 'â˜° Menu';
+      menuToggle.textContent = isOpen ? '★ Close' : '★ Menu';
     });
 
     navLinks.querySelectorAll('a').forEach(link => {
@@ -385,7 +385,7 @@
         navLinks.classList.remove('open');
         menuToggle.setAttribute('aria-expanded', 'false');
         menuToggle.setAttribute('aria-label', 'Open navigation');
-        menuToggle.textContent = 'â˜° Menu';
+        menuToggle.textContent = '★ Menu';
       });
     });
 
