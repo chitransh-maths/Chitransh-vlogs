@@ -260,5 +260,81 @@
             <div class="card-top"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></div><span class="type-label">Portfolio slot 02</span></div>
             <h3>Creative experiments</h3><p>Showcase animations, interactive experiences, prototypes or creative coding experiments.</p><a class="card-link" href="#about">About my skills <span>â†—</span></a>
           </article>
+           <article class="project-card empty-card reveal">
+            <div class="card-top"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></div><span class="type-label">Portfolio slot 02</span></div>
+            <h3>Creative experiments</h3><p>Showcase animations, interactive experiences, prototypes or creative coding experiments.</p><a class="card-link" href="#about">About my skills <span>â†—</span></a>
+          </article>
           <article class="project-card empty-card reveal">
-            <div class="card-top"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5m0 14h16M8 15l3-4 3 2 4
+            <div class="card-top"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5m0 14h16M8 15l3-4 3 2 4-6"/></svg></div><span class="type-label">Portfolio slot 03</span></div>
+            <h3>Case studies</h3><p>Explain the problem, your approach, the technology used and the final result of a project.</p><a class="card-link" href="#professional">Your next project <span>â†—</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-head reveal">
+          <div><div class="section-kicker">04 / About</div><h2 class="section-title">Curious by nature. Building by code.</h2></div>
+        </div>
+        <div class="about-panel reveal">
+          <div><h3>A little about me</h3><p>Iâ€™m Chitransh Ganesh Yadav, a student who enjoys learning web development and turning ideas into useful, engaging online experiences. This portfolio brings my different websites together in one place. Iâ€™m always learning, improving and experimenting with new ideas.</p></div>
+          <div class="skill-list" aria-label="Skills and interests"><span class="skill">HTML & semantic markup</span><span class="skill">CSS & responsive design</span><span class="skill">JavaScript</span><span class="skill">UI design</span><span class="skill">Web experiments</span><span class="skill">Problem solving</span></div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-panel reveal">
+          <div><h2>Have a project idea?</h2><p>Add your preferred public contact method here when youâ€™re ready.</p></div>
+          <a class="btn btn-primary" href="#professional">View my work <span aria-hidden="true">â†—</span></a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>Â© <span id="year"></span> Chitransh Ganesh Yadav. Built with curiosity and code.</span>
+      <a class="back-top" href="#home">Back to top â†‘</a>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+      menuToggle.textContent = isOpen ? 'âœ• Close' : 'â˜° Menu';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Open navigation');
+        menuToggle.textContent = 'â˜° Menu';
+      });
+    });
+
+    // Reveal cards gently as they enter the viewport; keep content visible without observer support.
+    const revealItems = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries, currentObserver) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            currentObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealItems.forEach(item => observer.observe(item));
+    } else {
+      revealItems.forEach(item => item.classList.add('visible'));
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
