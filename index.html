@@ -1,236 +1,264 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="4vteyLlE4gvchg2YivQhFbvIZyVtuxNNYJQQmAZFMX4" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  
-  <title>Chitransh Ganesh Yadav - Web Developer & Coder</title>
-  <meta name="description" content="Hi, I'm Chitransh — a young web developer and 8th std student from India with 20+ websites built. View my work, projects, and contact me today!">
-  <meta name="keywords" content="Chitransh Ganesh Yadav,Chitransh ganesh yadav vlogs, Web Developer, Student Portfolio, Indian Coder, HTML, CSS, JavaScript, 8th std, Young Coder, Projects, Website , hsnartihc website ,hsnartihc">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="Chitransh Ganesh Yadav â€” student, web developer and coder. Explore personal websites, public projects and professional work.">
+  <meta name="keywords" content="Chitransh Ganesh Yadav, web developer, student portfolio, Indian coder, HTML, CSS, JavaScript, projects">
   <meta name="author" content="Chitransh Ganesh Yadav">
- 
-  <!-- Favicon (logo shown in browser tab) -->
+  <!-- Google Search Console verification: keep this tag only if Google provided this exact token for this HTML site. -->
+  <meta name="google-site-verification" content="4vteyLlE4gvchg2YivQhFbvIZyVtuxNNYJQQmAZFMX4">
+  <title>Chitransh Ganesh Yadav â€” Web Developer & Coder</title>
   <link rel="icon" href="chitransh.png" type="image/png">
- <link rel="shortcut icon" href="chitransh.png" type="image/x-icon">
-  
-<link rel="apple-touch-icon" href="chitransh.png">
-  
-
-    <!-- Open Graph -->
-<meta property="og:title" content="Chitransh Ganesh Yadav – Creator of 20+ Web Projects" />
-<meta property="og:description" content="Visit my portfolio of web apps, animations, tools, and educational sites." />
-<meta property="og:image" content="https://chitransh-maths.github.io/Chitransh-vlogs/chitransh.png" />
-<meta property="og:url" content="https://chitransh-maths.github.io/Chitransh-vlogs" />
-<meta name="twitter:card" content="summary_large_image">
-
-<!-- Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Chitransh Ganesh Yadav",
-  "url": "https://chitransh-maths.github.io/Chitransh-vlogs",
-  "image": "https://chitransh-maths.github.io/Chitransh-vlogs/chitransh.png",
-  "jobTitle": "Student & Web Developer"
-}
-</script>
+  <link rel="apple-touch-icon" href="chitransh.png">
+  <meta property="og:title" content="Chitransh Ganesh Yadav â€” Creator of Web Projects">
+  <meta property="og:description" content="Explore personal websites, public projects, experiments and professional work.">
+  <meta property="og:image" content="https://chitransh-maths.github.io/Chitransh-vlogs/chitransh.png">
+  <meta property="og:url" content="https://chitransh-maths.github.io/Chitransh-vlogs">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Chitransh Ganesh Yadav",
+    "url": "https://chitransh-maths.github.io/Chitransh-vlogs",
+    "image": "https://chitransh-maths.github.io/Chitransh-vlogs/chitransh.png",
+    "jobTitle": "Student and Web Developer",
+    "knowsAbout": ["Web development", "HTML", "CSS", "JavaScript"]
+  }
+  </script>
   <style>
+    :root {
+      color-scheme: dark;
+      --bg: #06101f;
+      --panel: rgba(11, 31, 56, .64);
+      --panel-strong: rgba(12, 38, 69, .88);
+      --line: rgba(91, 183, 255, .23);
+      --blue: #48baff;
+      --cyan: #69f0ff;
+      --text: #eef7ff;
+      --muted: #9eb5cd;
+      --shadow: 0 18px 55px rgba(0, 0, 0, .28);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 92px; }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #141e30, #243b55);
-      color: #fff;
-      margin: 0;
-      padding: 20px;
+      margin: 0; min-height: 100vh; color: var(--text);
+      background:
+        radial-gradient(ellipse at 15% 5%, rgba(0, 128, 255, .19), transparent 36rem),
+        radial-gradient(ellipse at 85% 35%, rgba(0, 230, 255, .09), transparent 32rem),
+        var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6; overflow-x: hidden;
     }
-    h1 {
-      text-align: center;
-      font-size: 2.5em;
-      margin-bottom: 10px;
+    body::before {
+      content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background-image: linear-gradient(rgba(120, 190, 255, .035) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(120, 190, 255, .035) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, black, transparent 85%);
     }
-    h2 {
-      border-left: 5px solid #00adb5;
-      padding-left: 10px;
-      margin-top: 30px;
-      font-size: 1.5em;
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
+    .topbar {
+      position: sticky; top: 0; z-index: 50; backdrop-filter: blur(18px);
+      background: rgba(5, 15, 29, .78); border-bottom: 1px solid rgba(114, 190, 255, .13);
     }
-    .link-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 15px;
+    .nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 750; letter-spacing: -.03em; }
+    .brand-mark {
+      width: 39px; height: 39px; display: grid; place-items: center; border-radius: 12px;
+      color: #00111f; font-weight: 900; background: linear-gradient(135deg, var(--cyan), var(--blue));
+      box-shadow: 0 0 25px rgba(72, 186, 255, .25);
     }
-    .link-item {
-      background-color: #393e46;
-      padding: 15px 20px;
-      border-radius: 10px;
-      transition: transform 0.3s ease, background-color 0.3s;
-      flex: 1 1 250px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    .brand small { display: block; color: var(--muted); font-weight: 500; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 24px; color: #c4d8eb; font-size: .9rem; }
+    .nav-links a { transition: color .2s ease; }
+    .nav-links a:hover { color: var(--cyan); }
+    .menu-toggle { display: none; border: 1px solid var(--line); background: var(--panel); color: white; padding: 9px 12px; border-radius: 10px; }
+    .hero { min-height: 590px; display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; gap: 54px; padding-block: 78px 72px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--cyan); font-size: .78rem; font-weight: 750; text-transform: uppercase; letter-spacing: .15em; }
+    .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 12px var(--cyan); }
+    h1 { margin: 18px 0; max-width: 760px; font-size: clamp(2.7rem, 6vw, 5.1rem); line-height: 1.02; letter-spacing: -.065em; }
+    .gradient-text { color: transparent; background: linear-gradient(95deg, #fff 5%, #81d8ff 50%, #61f3ff 100%); background-clip: text; -webkit-background-clip: text; }
+    .hero-copy { max-width: 620px; color: var(--muted); font-size: 1.08rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border-radius: 12px; padding: 12px 17px; font-weight: 700; font-size: .92rem; border: 1px solid var(--line); transition: transform .2s, box-shadow .2s, border-color .2s; }
+    .btn:hover { transform: translateY(-2px); border-color: rgba(105, 240, 255, .6); }
+    .btn-primary { color: #031320; background: linear-gradient(110deg, #65e7ff, #58b9ff); border-color: transparent; box-shadow: 0 8px 28px rgba(47, 174, 255, .18); }
+    .btn-quiet { background: rgba(13, 36, 62, .52); }
+    .hero-visual { position: relative; display: grid; place-items: center; min-height: 350px; }
+    .orb { position: absolute; width: min(330px, 75vw); aspect-ratio: 1; border-radius: 50%; border: 1px solid rgba(101, 220, 255, .22); box-shadow: inset 0 0 65px rgba(0, 157, 255, .1), 0 0 70px rgba(0, 157, 255, .08); }
+    .orb::before, .orb::after { content: ""; position: absolute; inset: 14%; border: 1px solid rgba(101, 220, 255, .24); border-radius: 50%; transform: rotateX(65deg) rotate(-25deg); }
+    .orb::after { inset: 2%; transform: rotateX(65deg) rotate(55deg); border-color: rgba(101, 220, 255, .15); }
+    .profile-card { position: relative; width: min(300px, 82%); padding: 28px; border: 1px solid rgba(117, 204, 255, .3); border-radius: 24px; background: linear-gradient(145deg, rgba(18, 53, 86, .82), rgba(5, 20, 39, .83)); backdrop-filter: blur(20px); box-shadow: var(--shadow), 0 0 40px rgba(33, 166, 255, .08); }
+    .avatar { width: 66px; height: 66px; display: grid; place-items: center; border-radius: 20px; font-size: 1.55rem; font-weight: 850; color: #031320; background: linear-gradient(135deg, var(--cyan), var(--blue)); margin-bottom: 22px; }
+    .profile-card h2 { font-size: 1.22rem; margin: 0 0 5px; }
+    .profile-card p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .mini-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 19px; }
+    .tag { padding: 5px 9px; border: 1px solid var(--line); border-radius: 999px; color: #bfe9ff; font-size: .73rem; background: rgba(35, 112, 168, .1); }
+    section { padding-block: 66px; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 27px; }
+    .section-kicker { color: var(--cyan); font-size: .76rem; text-transform: uppercase; letter-spacing: .16em; font-weight: 800; }
+    h2.section-title { margin: 6px 0 0; font-size: clamp(1.8rem, 4vw, 2.55rem); letter-spacing: -.045em; line-height: 1.15; }
+    .section-description { max-width: 470px; margin: 0; color: var(--muted); font-size: .94rem; }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 17px; }
+    .project-card {
+      display: flex; flex-direction: column; min-height: 250px; padding: 23px; border-radius: 19px;
+      border: 1px solid var(--line); background: linear-gradient(145deg, rgba(14, 39, 66, .72), rgba(7, 22, 41, .64));
+      box-shadow: 0 12px 36px rgba(0, 0, 0, .1); transition: transform .22s, border-color .22s, background .22s;
     }
-    .link-item:hover {
-      background-color: #00adb5;
-      transform: translateY(-5px);
+    .project-card:hover { transform: translateY(-5px); border-color: rgba(92, 208, 255, .55); background: linear-gradient(145deg, rgba(18, 52, 86, .85), rgba(7, 22, 41, .8)); }
+    .card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 22px; }
+    .project-icon { width: 43px; height: 43px; display: grid; place-items: center; border-radius: 13px; color: var(--cyan); background: rgba(49, 163, 232, .12); border: 1px solid rgba(96, 194, 255, .2); }
+    .project-icon svg { width: 21px; height: 21px; }
+    .type-label { font-size: .7rem; letter-spacing: .09em; text-transform: uppercase; color: #91abc5; }
+    .project-card h3 { margin: 0 0 8px; font-size: 1.12rem; letter-spacing: -.02em; }
+    .project-card p { margin: 0 0 22px; color: var(--muted); font-size: .9rem; }
+    .card-link { display: inline-flex; align-items: center; gap: 8px; margin-top: auto; color: var(--cyan); font-size: .88rem; font-weight: 750; }
+    .card-link span { transition: transform .2s; }
+    .card-link:hover span { transform: translateX(4px); }
+    .empty-card { border-style: dashed; background: rgba(8, 25, 44, .34); }
+    .empty-card .project-icon { color: #a8c3dc; }
+    .about-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; padding: 28px; border-radius: 22px; border: 1px solid var(--line); background: var(--panel); }
+    .about-panel h3 { margin: 0 0 10px; font-size: 1.15rem; }
+    .about-panel p { margin: 0; color: var(--muted); }
+    .skill-list { display: flex; flex-wrap: wrap; gap: 9px; align-content: start; }
+    .skill { border: 1px solid var(--line); background: rgba(24, 68, 103, .34); border-radius: 10px; padding: 9px 12px; color: #cfeaff; font-size: .84rem; }
+    .contact-panel { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 30px; border: 1px solid rgba(88, 192, 255, .25); border-radius: 22px; background: linear-gradient(110deg, rgba(15, 60, 95, .54), rgba(8, 26, 47, .75)); }
+    .contact-panel h2 { margin: 0 0 6px; font-size: 1.55rem; letter-spacing: -.035em; }
+    .contact-panel p { margin: 0; color: var(--muted); }
+    footer { padding: 28px 0 36px; color: #829bb5; font-size: .82rem; border-top: 1px solid rgba(114, 190, 255, .12); }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .back-top { color: var(--cyan); }
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; } .reveal { opacity: 1; transform: none; } }
+    @media (max-width: 820px) {
+      .hero { grid-template-columns: 1fr; gap: 20px; padding-top: 62px; }
+      .hero-visual { min-height: 300px; }
+      .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .section-head { align-items: start; flex-direction: column; }
     }
-    .link-item a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 1.1em;
-      display: block;
+    @media (max-width: 600px) {
+      .wrap { width: min(100% - 28px, 1120px); }
+      .nav { min-height: 66px; }
+      .menu-toggle { display: inline-flex; }
+      .nav-links { display: none; position: absolute; top: 66px; left: 14px; right: 14px; padding: 17px; border: 1px solid var(--line); border-radius: 15px; background: rgba(5, 17, 33, .97); flex-direction: column; align-items: stretch; gap: 0; box-shadow: var(--shadow); }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 11px 7px; }
+      .brand { font-size: .92rem; }
+      .hero { min-height: auto; padding-block: 55px 35px; }
+      h1 { font-size: clamp(2.55rem, 12vw, 4rem); }
+      .hero-copy { font-size: 1rem; }
+      .hero-visual { min-height: 285px; }
+      section { padding-block: 48px; }
+      .cards { grid-template-columns: 1fr; }
+      .project-card { min-height: 220px; }
+      .about-panel { grid-template-columns: 1fr; padding: 22px; }
+      .contact-panel, .footer-inner { align-items: flex-start; flex-direction: column; }
+      .contact-panel { padding: 23px; }
     }
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-    .question-btn {
-  display: block;
-  margin: 40px auto 20px auto;
-  padding: 12px 25px;
-  font-size: 1.1em;
-  background-color: #00adb5;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-.question-btn:hover {
-  background-color: #00d4d5;
-  transform: scale(1.05);
-}
-    .project-dropdown {
-  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M0 0l5 7 5-7z" fill="%23fff"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 15px center;
-  background-size: 10px 7px;
-    }
-    .project-dropdown {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  font-size: 1em;
-  border-radius: 8px;
-  border: none;
-  background-color: #393e46;
-  color: #fff;
-  margin-top: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  appearance: none;
-}
-
-.project-dropdown:hover {
-  background-color: #00adb5;
-  cursor: pointer;
-}
-    
-    
   </style>
-  <title>Chitransh Ganesh Yadav Vlogs – Explore Coding, Tech & Creative Projects</title>
-<meta name="description" content="Welcome to Chitransh Vlogs – a world of coding, educational tools, tech experiments, and creative digital content. Explore free projects, smart interfaces, and fun web creations!">
-  
 </head>
 <body>
-
-  <h1>🌐 Chitransh Vlogs - Project Links Hub</h1>
-  <h2>My Insta 🔗🌎</h2>
-  <div class="link-list">
-    <div class="link-item"><a href="https://www.instagram.com/champion_king_2520?igsh=MW9penlqZ3Z6NjE0Yg==" target="_blank">Champion_king_2520 🏆</a></div>
-  </div>
-<br />
-  <h2>🔗 Google Sites</h2>
-  <div class="link-list">
-    <div class="link-item"><a href="https://sites.google.com/view/chitranshganeshyadav/me" target="_blank">Chitransh Ganesh Yadav</a></div>
-    <div class="link-item"><a href="https://sites.google.com/view/knowledgehubcode/home" target="_blank">Knowledge Hub Code</a></div>
-    <div class="link-item"><a href="https://chitransh-maths.github.io/1blog2/" target="_blank">Champion Singh</a></div>
-  </div>
-<br />
-  
-  <h2>🌐 Tiiny Host</h2>
-  <div class="link-list">
-    <div class="link-item"><a href="https://chitranshcodeinterface.tiiny.site" target="_blank">Code Interface</a></div>
-    <div class="link-item"><a href="https://chitranshsurvey.tiiny.site" target="_blank">Survey</a></div>
-    <div class="link-item"><a href="https://chitranshcode.tiiny.site" target="_blank">Chitransh Code</a></div>
-    
-<br />
-    
-  <h2>🌍 Website.com</h2>
-  <div class="link-list">
-    <div class="link-item"><a href="https://championsingh.website3.me" target="_blank">Champion Singh (Website3)</a></div>
-  </div>
-<br>
-    
-  <h2>💻 GitHub Pages</h2>
-  <div class="link-list">
-    <div class="link-list">
-      
-  <select class="project-dropdown" onchange="location = this.value;">
-    <option selected disabled>Mathematics Websites</option>
-    
-    <option value="https://chitransh-maths.github.io/chitranshMaths/">Chitransh Maths (password 🔑)</option>
-    <option value="https://chitransh-maths.github.io/ChitMaths/">Chitransh Maths Normal </option>
-    
-  </select>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Chitransh home">
+        <span class="brand-mark">CG</span>
+        <span>Chitransh Ganesh Yadav<small>Web developer Â· Coder</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation">â˜° Menu</button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#personal">Personal</a>
+        <a href="#public">Public</a>
+        <a href="#professional">Professional</a>
+        <a href="#about">About</a>
+      </nav>
     </div>
-    <div class="link-item"><a href="https://chitransh-maths.github.io/Chitweb/" target="_blank">Chit Web</a></div>
-    <div class="link-item"><a href="https://chitransh-maths.github.io/Yashtheghosthunter/" target="_blank">Yash the Ghost Hunter</a></div>
-    <div class="link-item"><a href="https://chitransh-maths.github.io/Appraisal/" target="_blank">Appraisal</a></div>
-    <div class="link-item"><a href="https://chitransh-maths.github.io/Chitchess/" target="_blank">Chit Chess</a></div>
-    <div class="link-item"><a href="https://chitransh6164.github.io/space-weight-calculator/" target="_blank">Space Weight Calculator</a></div>
-    <div class="link-item"><a href="https://chitransh6164.github.io/Chitransh-python/" target="_blank">Chitransh Python</a></div>
-    <div class="link-item"><a href="https://chitransh6164.github.io/chat-bot/" target="_blank">Chat Bot</a></div>
-    <div class="link-item"><a href="https://chitransh6164.github.io/Periodic-Table/" target="_blank">Periodic Table</a></div>
-  </div>
-<br />
-    
-  <h2>🤖 Chatbase Bot</h2>
-  <div class="link-list">
-    <div class="link-item"><a href="https://www.chatbase.co/chatbot-iframe/3DlzYb2Sdi2fxf18gCAxL" target="_blank">Chitransh Chatbot</a></div>
-  </div>
-<br />
-    
-  <h2>🚀 Netlify</h2>
-  <div class="link-list">
-    <div class="link-item"><a href="https://c1h2i3t4.netlify.app" target="_blank">C1H2I3T4 Project</a></div>
-    <div class="link-item"><a href="https://c4h3i2t1.netlify.app" target="_blank">C4H3I2T1 Project</a></div>
-  </div>
-    <br />
-    
-<h2>Select a Project</h2>
-<div class="link-list">
-  <select class="project-dropdown" onchange="location = this.value;">
-    <option selected disabled>Choose a project...</option>
-    
-    <option value="https://chitransh-maths.github.io/You-tube2520">Smilodon Hub</option>
-    <option value="https://chitransh-maths.github.io/.../">Portfolio</option>
-    <option value="https://sites.google.com/view/chitranshyadav/home">Farewell</option>
-    
-    
-  </select>
-</div>
-  
-  <footer>
-    &copy; 2025 Chitransh Vlogs | All rights reserved.
-  </footer>
-    <br />
-    
-  <!-- 🔐 Question Button -->
-<button class="question-btn" onclick="askPassword()">❔</button>
-  <script>
-  function askPassword() {
-    const password = prompt("Enter the password to access:");
-    if (password === "chitransh") {
-      window.location.href = "https://sites.google.com/view/champion/hom";
-    } else if (password !== null) {
-      alert("Incorrect password. Access denied.");
-    }
-  }
-  </script>
-  
+  </header>
 
-</body>
-</html>
-                             
+  <main>
+    <div class="wrap">
+      <section class="hero" id="home">
+        <div>
+          <div class="eyebrow"><span class="pulse"></span> Digital portfolio Â· India</div>
+          <h1>Building ideas into <span class="gradient-text">digital experiences.</span></h1>
+          <p class="hero-copy">Hi, Iâ€™m Chitransh â€” a student, web developer and coder who enjoys building websites, interactive tools and creative web projects. Explore my personal spaces, public projects and professional work below.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#personal">Explore my websites <span aria-hidden="true">â†—</span></a>
+            <a class="btn btn-quiet" href="#about">A little about me</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Portfolio profile card">
+          <div class="orb"></div>
+          <div class="profile-card">
+            <div class="avatar">CG</div>
+            <h2>Chitransh Ganesh Yadav</h2>
+            <p>Student Â· Web Developer Â· Creator</p>
+            <div class="mini-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Creative coding</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="personal">
+        <div class="section-head reveal">
+          <div><div class="section-kicker">01 / Personal spaces</div><h2 class="section-title">My personal websites</h2></div>
+          <p class="section-description">Personal pages and profiles that introduce me, my interests and the things Iâ€™m working on.</p>
+        </div>
+        <div class="cards">
+          <article class="project-card reveal">
+            <div class="card-top"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V21h13V9.5M9 21v-7h6v7"/></svg></div><span class="type-label">Personal site</span></div>
+            <h3>Champion Singh</h3><p>A personal website hosted on Google Sites.</p>
+            <a class="card-link" href="https://sites.google.com/view/championsingh/home" target="_blank" rel="noopener noreferrer">Visit website <span>â†—</span></a>
+          </article>
+          <article class="project-card reveal">
+            <div class="card-top"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg></div><span class="type-label">Personal portfolio</span></div>
+            <h3>Chitransh Ganesh Yadav</h3><p>My personal page with information about me and my work.</p>
+            <a class="card-link" href="https://sites.google.com/view/chitranshganeshyadav/me" target="_blank" rel="noopener noreferrer">Visit website <span>â†—</span></a>
+          </article>
+          <article class="project-card empty-card reveal">
+            <div class="card-top"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg></div><span class="type-label">Coming next</span></div>
+            <h3>More personal projects</h3><p>This space is ready for another personal website whenever you want to add one.</p>
+            <a class="card-link" href="#professional">Explore other work <span>â†—</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section id="public">
+        <div class="section-head reveal">
+          <div><div class="section-kicker">02 / Public projects</div><h2 class="section-title">Made to be explored</h2></div>
+          <p class="section-description">Public-facing websites and projects that visitors can open and explore.</p>
+        </div>
+        <div class="cards">
+          <article class="project-card reveal">
+            <div class="card-top"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></div><span class="type-label">Public website</span></div>
+            <h3>Champion King</h3><p>A public Google Sites page, linked here for visitors to access.</p>
+            <a class="card-link" href="https://sites.google.com/view/championking/home" target="_blank" rel="noopener noreferrer">Visit website <span>â†—</span></a>
+          </article>
+          <article class="project-card empty-card reveal">
+            <div class="card-top"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg></div><span class="type-label">Add later</span></div>
+            <h3>More public projects</h3><p>Add links to tools, experiments, community pages or other public projects here.</p>
+            <a class="card-link" href="#professional">See professional section <span>â†—</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section id="professional">
+        <div class="section-head reveal">
+          <div><div class="section-kicker">03 / Professional work</div><h2 class="section-title">Selected work & experiments</h2></div>
+          <p class="section-description">A flexible showcase for future client work, web apps, tools, experiments and case studies.</p>
+        </div>
+        <div class="cards">
+          <article class="project-card empty-card reveal">
+            <div class="card-top"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/></svg></div><span class="type-label">Portfolio slot 01</span></div>
+            <h3>Websites & web apps</h3><p>Replace this card with a project title, a short description and your live project link.</p><a class="card-link" href="mailto:hello@example.com?subject=Portfolio%20project">Add project details <span>â†—</span></a>
+          </article>
+          <article class="project-card empty-card reveal">
+            <div class="card-top"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></div><span class="type-label">Portfolio slot 02</span></div>
+            <h3>Creative experiments</h3><p>Showcase animations, interactive experiences, prototypes or creative coding experiments.</p><a class="card-link" href="#about">About my skills <span>â†—</span></a>
+          </article>
+          <article class="project-card empty-card reveal">
+            <div class="card-top"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5m0 14h16M8 15l3-4 3 2 4
